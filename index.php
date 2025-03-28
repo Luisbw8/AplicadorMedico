@@ -77,11 +77,14 @@ switch ($action) {
         $especialidadeController->excluirEspecialidade();
         break;
 
+  
+
+
     default:
         // Se estiver logado, mostra a página inicial, senão, o login
         if (isset($_SESSION['usuario'])) {
             include 'view/includes/header.php'; //Conteúdo da home
-            echo "<h2>Bem-vindo, " . htmlspecialchars($_SESSION['usuario']) . "!</h2>";
+            echo "<h2>Seja Bem-vindo, " . htmlspecialchars($_SESSION['usuario']) . "!</h2>";
             //Mostrar informações, links, etc.
             include 'view/includes/footer.php';
         } else {
